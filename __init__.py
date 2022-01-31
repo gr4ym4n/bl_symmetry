@@ -7,7 +7,7 @@ DEBUG = 'DEBUG_MODE' is sys.argv
 SYMMETRY_AFIX_SEPARATORS = (".", " ", "-", "_")
 SYMMETRY_AFIXES_LEFT: typing.Set[str] = {"l", "L", "left", "Left", "LEFT"}
 SYMMETRY_AFIXES_RIGHT: typing.Set[str] = {"r", "R", "Right", "RIGHT"}
-SYMMETRY_AFIXES: typing.Set[str] = SYMMETRY_AFIXES_LEFT + SYMMETRY_AFIXES_RIGHT
+SYMMETRY_AFIXES: typing.Set[str] = SYMMETRY_AFIXES_LEFT | SYMMETRY_AFIXES_RIGHT
 
 SYMMETRY_AFIX_PAIRS: typing.Tuple[typing.Tuple[str, str], ...] = (
     ("l", "r"),
