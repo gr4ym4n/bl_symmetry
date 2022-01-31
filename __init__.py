@@ -86,7 +86,7 @@ def symmetrical_basename(name: str) -> str:
 
 def symmetrical_split(name: str) -> typing.Tuple[str, str, str]:
     """
-    Splits the data block name into its symmetrical preifx, base name and symmetrical suffix.
+    Splits the data block name into its symmetrical prefix, base name and symmetrical suffix.
     """
     if DEBUG:
         assert isinstance(name, str), (f'symmetrical_split(name): '
