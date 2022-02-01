@@ -2,7 +2,7 @@
 import typing
 import sys
 
-DEBUG = 'DEBUG_MODE' is sys.argv
+DEBUG = 'DEBUG_MODE' in sys.argv
 
 SYMMETRY_AFIX_SEPARATORS = (".", " ", "-", "_")
 SYMMETRY_AFIXES_LEFT: typing.Set[str] = {"l", "L", "left", "Left", "LEFT"}
